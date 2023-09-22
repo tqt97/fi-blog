@@ -80,7 +80,7 @@ class FiBlogServiceProvider extends PackageServiceProvider
 
         // Handle Stubs
         if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+            foreach (app(Filesystem::class)->files(__DIR__.'/../stubs/') as $file) {
                 $this->publishes([
                     $file->getRealPath() => base_path("stubs/fi-blog/{$file->getFilename()}"),
                 ], 'fi-blog-stubs');
@@ -103,8 +103,8 @@ class FiBlogServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('fi-blog', __DIR__ . '/../resources/dist/components/fi-blog.js'),
-            Css::make('fi-blog-styles', __DIR__ . '/../resources/dist/fi-blog.css'),
-            Js::make('fi-blog-scripts', __DIR__ . '/../resources/dist/fi-blog.js'),
+            Css::make('fi-blog-styles', __DIR__.'/../resources/dist/fi-blog.css'),
+            Js::make('fi-blog-scripts', __DIR__.'/../resources/dist/fi-blog.js'),
         ];
     }
 
