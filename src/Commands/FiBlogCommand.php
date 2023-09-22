@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Tqt97\FiBlog\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FiBlogCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'fi-blog';
 
     public $description = 'My command';
 
